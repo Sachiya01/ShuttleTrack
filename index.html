@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDU Shuttle Tracking System</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="Script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4M2Jh0oG5eUWeeGN_cj2oJ2-8vj8NUUc&callback=initMap" async defer></script>
+</head>
+    
+<body>
+    <div id="header">
+        <img src="Images\KDU_Logo.png">
+        <span class="header-text-1">General Sir John Kotelawala <br> Defence University <br> <span class="header-text-4">For the Motherland Forever | සිය රටටමයි කවදත්  </span></span>
+        
+        <span class="header-text-2"> Shuttle Tracking System <br> &nbsp &nbsp &nbsp &nbsp <span class="header-text-3">Live Updates Portal</span>
+    </span>
+    </div>
+    <div id="hamburger">☰</div>
+    <div id="search-container">
+        <form id="search-form">
+            <input type="text" id="destination" placeholder="Enter destination address">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">List of Shuttles</div>
+            <select id="shuttle-dropdown" class="dropdown"></select>
+            <div id="shuttle-info" class="shuttle-info"></div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="footer">© 2024 KDU Shuttle Tracking System | Version 1.0</div>
+</body>
+</html>

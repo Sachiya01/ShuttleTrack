@@ -1,0 +1,202 @@
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "San Francisco";
+        }
+
+        /* Header */
+        #header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Frutiger';
+            font-weight: bold;
+            font-size: 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        #header img {
+            height: 90px;
+            margin-right: 20px;
+            margin-left: 50px;
+        }
+
+        /* Individual Text Styling */
+        .header-text-1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            color: #ffffff;
+            align-items: left;
+            margin-right: 15px;
+        }
+        .header-text-4 {
+            font-family: 'Arial', serif;
+            font-size: 14px;
+            margin-left: px;
+            color: #ffffff;
+        }
+
+        .header-text-2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: #ffffff;
+            margin-left: 260px;
+        }
+
+        .header-text-3 {
+            font-family: 'Georgia', serif;
+            font-size: 24px;
+            margin-left: 5px;
+            color: #a52218;
+        }
+
+        
+
+        /* Footer */
+        #footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 3;
+        }
+
+        /* Map */
+        #map {
+            height: calc(100% - 120px); /* Account for header and footer */
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        /* Search Container */
+        #search-container {
+            padding: 15px;
+            background-color: #fffdfd;
+            position: fixed;
+            top: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        #search-container input {
+            padding: 0px;
+            margin: 2px;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+
+        #search-container button {
+            padding: px;
+            margin: 2px;
+            font-size: 15px;
+            background-color: #4c8bf5;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            height: calc(100% - 10px);
+            width: 350px;
+            position: fixed;
+            top: 120px;
+            left: -360px;
+            background-color: #243b7f;
+            padding: 10px;
+            box-shadow: 8px 0 10px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            transition: left 0.5s;
+            z-index: 3;
+        }
+
+        #sidebar.open {
+            left: 0;
+        }
+
+        #sidebar.open + #hamburger {
+            left: 370px;
+        }
+
+        /* Hamburger Menu */
+        #hamburger {
+            position: fixed;
+            top: 40px;
+            left: 20px;
+            background-color: #ecf0f1;
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 4;
+            cursor: pointer;
+            font-size: 24px;
+            transition: left 0.3s;
+        }
+
+        /* Sidebar Sections */
+        .sidebar-section {
+            margin-bottom: 50px;
+        }
+
+        .sidebar-title {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+
+            font-size: 25px;
+            color: #ffffff;
+            padding: 5px;
+            background-color: #169bd6;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #219ebc;
+            font-size: 20px;
+            margin-bottom: 5px;
+            background-color: #fff;
+            color: #333;
+            font-family: "Calibri";
+        }
+
+        .shuttle-info {
+            padding: 3px;
+            border-radius: 10px;
+            background-color: #666b71;
+            margin-top: 1px;
+            font-family: "Arial";
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        #bus-info-window {
+            max-width: 400px;
+            max-height: 300px;
+            background-color: #243b7f;
+            border-radius: 4px;
+            color: #f1ecec;
+            padding: 3px;
+        }
+   
