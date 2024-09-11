@@ -56,7 +56,7 @@
             font-family: 'Georgia', serif;
             font-size: 24px;
             margin-left: 5px;
-            color: #a52218;
+            color: #ff1100;
         }
 
         
@@ -95,14 +95,14 @@
         }
 
         #search-container input {
-            padding: 0px;
+            padding: 15px;
             margin: 2px;
             font-size: 15px;
             border-radius: 15px;
         }
 
         #search-container button {
-            padding: px;
+            padding: 15px;
             margin: 2px;
             font-size: 15px;
             background-color: #4c8bf5;
